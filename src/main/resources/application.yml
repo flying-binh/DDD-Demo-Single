@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:h2:./db/order;MODE=MySql
+  jpa:
+    hibernate:
+      ddl-auto: update
+
