@@ -1,6 +1,6 @@
 package com.ddd.demo.promotion.domain.order;
 
-import com.ddd.demo.promotion.domain.promotion.Promotion;
+import com.ddd.demo.promotion.domain.order.promotion.Promotion;
 
 import java.util.List;
 

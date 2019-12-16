@@ -1,6 +1,6 @@
-package com.ddd.demo.promotion.domain.promotion.action;
+package com.ddd.demo.promotion.domain.order.promotion.action;
 
-import com.ddd.demo.promotion.domain.promotion.Promotion;
+import com.ddd.demo.promotion.domain.order.promotion.Promotion;
 
 public class WithdrawPromotionActionCommand implements ActionCommand {
     @Override

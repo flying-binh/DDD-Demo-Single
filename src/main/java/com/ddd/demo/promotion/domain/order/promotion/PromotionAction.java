@@ -1,6 +1,6 @@
-package com.ddd.demo.promotion.domain.promotion;
+package com.ddd.demo.promotion.domain.order.promotion;
 
-import com.ddd.demo.promotion.domain.promotion.action.*;
+import com.ddd.demo.promotion.domain.order.promotion.action.*;
 
 public enum PromotionAction {
     ATTEND {

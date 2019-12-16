@@ -1,7 +1,6 @@
-package com.ddd.demo.promotion.domain.promotion;
+package com.ddd.demo.promotion.domain.order.promotion;
 
-import com.ddd.demo.promotion.domain.resume.comfirmation.Confirmation;
-import lombok.Data;
+import com.ddd.demo.promotion.domain.order.comfirmation.Confirmation;
 import lombok.Getter;
 
 import java.time.LocalDate;
