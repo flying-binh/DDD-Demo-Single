@@ -1,6 +1,6 @@
 package com.ddd.demo.promotion.controller;
 
-import com.ddd.demo.promotion.application.OrderApplication;
+import com.ddd.demo.promotion.application.order.OrderApplication;
 import com.ddd.demo.promotion.controller.dto.OrderRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

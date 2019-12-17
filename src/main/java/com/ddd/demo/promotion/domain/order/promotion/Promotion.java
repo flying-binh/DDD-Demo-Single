@@ -1,6 +1,5 @@
 package com.ddd.demo.promotion.domain.order.promotion;
 
-import com.ddd.demo.promotion.domain.order.comfirmation.Confirmation;
 import lombok.Getter;
 
 import java.time.LocalDate;
@@ -12,13 +11,10 @@ public class Promotion {
     private  double feeAmount;
     private LocalDate endDate;
     private LocalDate activeDate;
-    private Confirmation confirmation;
+    private ResumeConfirmation confirmation;
     private PromotionAction promotionAction;
 
     private List<PromotionMember> promotionMembers;
 
     private List<PromotionReward> promotionRewards;
-
-    private List<PromotionRule> rules;
 }
-

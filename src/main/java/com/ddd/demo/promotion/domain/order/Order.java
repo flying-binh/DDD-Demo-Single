@@ -13,11 +13,12 @@ public class Order {
     }
 
     public Order createOrder() {
-        this.promotions.stream().forEach(
-                promotion -> {
-                    promotion.getPromotionAction().getCommand().execute(promotion);
-                }
-        );
+        // add domain logic
+
         return this;
+    }
+
+    public List<Promotion> getPromotions() {
+        return this.promotions;
     }
 }

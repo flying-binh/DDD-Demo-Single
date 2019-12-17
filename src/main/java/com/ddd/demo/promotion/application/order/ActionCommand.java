@@ -1,4 +1,4 @@
-package com.ddd.demo.promotion.domain.order.promotion.action;
+package com.ddd.demo.promotion.application.order;
 
 import com.ddd.demo.promotion.domain.order.promotion.Promotion;
 

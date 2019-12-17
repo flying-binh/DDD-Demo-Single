@@ -1,4 +1,4 @@
-package com.ddd.demo.promotion.application;
+package com.ddd.demo.promotion.application.order;
 
 
 import com.ddd.demo.promotion.domain.notification.NotificationService;
@@ -19,6 +19,13 @@ public class OrderApplication {
     @Transactional
     public String createOrder(Order orderRequest) {
         Order order = orderRequest.createOrder();
+
+        order.getPromotions().stream().forEach(
+                promotion -> {
+                    ActionCommandFactory.getCommand(promotion.getPromotionAction()).execute(promotion);
+                }
+        );
+
         orderRepository.save(order);
         //publish order created event;
         return order.getId();
