@@ -1,4 +1,4 @@
-package com.tw.ddd.trainning.order;
+package com.ddd.demo.promotion;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

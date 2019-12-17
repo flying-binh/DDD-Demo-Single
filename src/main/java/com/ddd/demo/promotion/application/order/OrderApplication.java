@@ -5,9 +5,11 @@ import com.ddd.demo.promotion.domain.notification.NotificationService;
 import com.ddd.demo.promotion.domain.order.Order;
 import com.ddd.demo.promotion.domain.order.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.transaction.Transactional;
 
+@Component
 public class OrderApplication {
 
     @Autowired

@@ -9,8 +9,6 @@ public class ActionCommandFactory {
                 return new AttendPromotionActionCommand();
             case CANCEL:
                 return new CancelPromotionActionCommand();
-            case CHANGE:
-                return new ChangePromotionActionCommand();
             case WITHDRAW:
                 return new WithdrawPromotionActionCommand();
             default:
