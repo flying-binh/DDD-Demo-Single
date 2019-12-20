@@ -19,8 +19,8 @@ public class OrderApplication {
     private NotificationService notificationService;
 
     @Transactional
-    public String createOrder(Order orderRequest) {
-        Order order = orderRequest.createOrder();
+    public String createOrder(Order order) {
+        order = order.createOrder();
 
         order.getPromotions().stream().forEach(
                 promotion -> {
@@ -31,5 +31,9 @@ public class OrderApplication {
         orderRepository.save(order);
         //publish order created event;
         return order.getId();
+    }
+
+    public Order findOrderById(String orderId) {
+        return orderRepository.findById(orderId);
     }
 }
